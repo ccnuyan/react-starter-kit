@@ -5,7 +5,7 @@
   "description": "react",
   "scripts": {
     "start": "set NODE_ENV=production || export NODE_ENV=production & babel-node ./server/index.js",
-    "server-dev": "set NODE_ENV=development || export NODE_ENV=development & nodemon --config .nodemon.server-dev.json ./server/index.js",
+    "server-dev": "set NODE_ENV=development || export NODE_ENV=development & nodemon --config nodemon.server-dev.json ./server/index.js",
     "webpack-dev": "set NODE_ENV=development || export NODE_ENV=development & webpack-dev-server --config=webpack.dev-config.js",
     "webpack-build": "set NODE_ENV=release || export NODE_ENV=release & rm -r build & webpack --config=webpack.build-config.js && npm start",
     "lint-staged": "lint-staged"
@@ -41,8 +41,6 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "css-loader": "^0.28.0",
-    "esformatter": "^0.10.0",
-    "esformatter-jsx": "^8.0.0",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-import": "^2.2.0",

@@ -1,0 +1,142 @@
+{
+  "name": "react-starter-kit",
+  "author": "ccnuyan",
+  "version": "1.0.0",
+  "description": "react",
+  "scripts": {
+    "start": "export NODE_ENV=production && babel-node ./server/index.js",
+    "server-dev": "export NODE_ENV=development && nodemon --config .nodemon.server-dev.json ./server/index.js",
+    "webpack-dev": "export NODE_ENV=development && webpack-dev-server --config=webpack.dev-config.js",
+    "webpack-build": "export NODE_ENV=release && rm -r build | webpack --config=webpack.build-config.js && npm start",
+    "lint-staged": "lint-staged"
+  },
+  "pre-commit": "lint-staged",
+  "lint-staged": {
+    "*.js": "eslint"
+  },
+  "license": "MIT",
+  "#comment# - browserslist": "for postcss autoprefix, which is in ./webpack/postcss.config.js",
+  "browserslist": [
+    ">1%",
+    "last 4 versions",
+    "Firefox ESR",
+    "not ie <= 8"
+  ],
+  "#comment# - dependencies": {},
+  "dependencies": {
+    "express": "^4.15.2",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "rimraf": "^2.6.1"
+  },
+  "#comment# - devDependencies": {
+    "assets-webpack-plugin": "to generate assets.json in 'build'"
+  },
+  "devDependencies": {
+    "assets-webpack-plugin": "^3.5.1",
+    "babel-core": "^6.24.1",
+    "babel-eslint": "^7.2.2",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^0.28.0",
+    "esformatter": "^0.10.0",
+    "esformatter-jsx": "^8.0.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-mocha": "^4.9.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^6.10.3",
+    "eslint-plugin-standard": "^3.0.1",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "html-loader": "^0.4.5",
+    "lint-staged": "^3.4.0",
+    "markdown-loader": "^2.0.0",
+    "node-sass": "^4.5.2",
+    "pixrem": "^3.0.2",
+    "pleeease-filters": "^3.0.1",
+    "postcss-calc": "^5.3.1",
+    "postcss-color-function": "^3.0.0",
+    "postcss-custom-media": "^5.0.1",
+    "postcss-custom-properties": "^5.0.2",
+    "postcss-custom-selectors": "^3.0.0",
+    "postcss-flexbugs-fixes": "^2.1.1",
+    "postcss-loader": "^1.3.3",
+    "postcss-media-minmax": "^2.1.2",
+    "postcss-nested": "^1.0.1",
+    "postcss-nesting": "^2.3.1",
+    "postcss-partial-import": "^3.1.1",
+    "postcss-selector-matches": "^2.0.5",
+    "postcss-selector-not": "^2.0.0",
+    "postcss-url": "^6.0.4",
+    "pre-commit": "^1.2.2",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.16.1",
+    "uglifyjs-webpack-plugin": "^0.4.2",
+    "webpack": "^2.3.3"
+  },
+  "#comment# - eslintConfig": "http://eslint.org/docs/user-guide/configuring",
+  "#comment# - eslint-plugin-react": "https://github.com/yannickcr/eslint-plugin-react",
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "parser": "babel-eslint",
+    "plugins": [
+      "standard",
+      "import",
+      "jsx-a11y",
+      "react",
+      "mocha",
+      "promise"
+    ],
+    "extends": [
+      "plugin:import/recommended",
+      "plugin:jsx-a11y/recommended",
+      "plugin:react/recommended",
+      "plugin:mocha/recommended",
+      "plugin:promise/recommended",
+      "eslint:recommended",
+      "airbnb/base"
+    ],
+    "env": {
+      "browser": true,
+      "mocha": true,
+      "es6": true
+    },
+    "rules": {
+      "camelcase": 0,
+      "no-underscore-dangle": 0,
+      "max-len": [
+        "error",
+        160
+      ],
+      "import/no-extraneous-dependencies": 0,
+      "arrow-body-style": 0,
+      "no-return-assign": 0,
+      "react/forbid-prop-types": 0,
+      "react/jsx-closing-bracket-location": 2,
+      "react/jsx-curly-spacing": [
+        2,
+        "always"
+      ],
+      "react/no-set-state": 0,
+      "react/jsx-indent": [
+        2,
+        2
+      ],
+      "id-length": 0,
+      "object-curly-spacing": [
+        2,
+        "always"
+      ]
+    }
+  }
+}

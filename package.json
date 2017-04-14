@@ -4,10 +4,10 @@
   "version": "1.0.0",
   "description": "react",
   "scripts": {
-    "start": "export NODE_ENV=production || set NODE_ENV=production && babel-node ./server/index.js",
-    "server-dev": "export NODE_ENV=development || set NODE_ENV=development && nodemon --config .nodemon.server-dev.json ./server/index.js",
-    "webpack-dev": "export NODE_ENV=development || set NODE_ENV=development && webpack-dev-server --config=webpack.dev-config.js",
-    "webpack-build": "export NODE_ENV=release || set NODE_ENV=release || rm -r build && webpack --config=webpack.build-config.js && npm start",
+    "start": "set NODE_ENV=production || export NODE_ENV=production & babel-node ./server/index.js",
+    "server-dev": "set NODE_ENV=development || export NODE_ENV=development & nodemon --config .nodemon.server-dev.json ./server/index.js",
+    "webpack-dev": "set NODE_ENV=development || export NODE_ENV=development & webpack-dev-server --config=webpack.dev-config.js",
+    "webpack-build": "set NODE_ENV=release || export NODE_ENV=release & rm -r build & webpack --config=webpack.build-config.js && npm start",
     "lint-staged": "lint-staged"
   },
   "pre-commit": "lint-staged",

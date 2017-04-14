@@ -1,6 +1,6 @@
 {
   "app": {
-    "js": "//localhost:8080/assets/index.js",
-    "css": "//localhost:8080/assets/style.css"
+    "js": "/assets/app.056ff10bea5fd86c7551.js",
+    "css": "/assets/style.056ff10bea5fd86c7551.css"
   }
 }

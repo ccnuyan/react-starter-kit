@@ -2,13 +2,14 @@ import React, { Component, PropTypes } from 'react'; // eslint-disable-line no-u
 import ReactDOM from 'react-dom';
 
 import './style.scss';
-import readme from '../readme.md';
+import content from '../readme.md';
+import ReadMe from './ReadMe';
 
 class Root extends Component {
   render = () => {
     return (
       <div style={ { padding: '2em' } }>
-        <div dangerouslySetInnerHTML={ { __html: readme } } />
+        <ReadMe content={ content }/>
       </div>
     );
   }

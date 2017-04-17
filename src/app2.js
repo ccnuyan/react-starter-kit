@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react'; // eslint-disable-line no-unused-vars
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
 import './style.scss';

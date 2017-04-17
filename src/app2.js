@@ -9,6 +9,7 @@ class Root extends Component {
   render = () => {
     return (
       <div style={ { padding: '2em' } }>
+        <h1>app2</h1>
         <ReadMe content={ content }/>
       </div>
     );

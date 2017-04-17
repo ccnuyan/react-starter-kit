@@ -16,6 +16,13 @@ file `.babelrc ` could be only in each subdirectory of root;
 `npm run server-dev`
 `npm run webpack-dev`
 
+## pages
+
+http://localhost:13000/  
+http://localhost:13000/app  
+http://localhost:13000/app1  
+http://localhost:13000/app2  
+
 ## prod mode
 
 `npm start`

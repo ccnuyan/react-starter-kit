@@ -1,3 +1,8 @@
+# features
+
+## docker deployment
+## chunks
+
 # how to use
 
 ## global scope modules  
@@ -12,20 +17,26 @@ no babel configuration in code;
 file `.babelrc ` could be only in each subdirectory of root; 
 
 ## dev mode
-
-`npm run server-dev`
-`npm run webpack-dev`
+mac-os:  
+`npm run server-dev`  
+`npm run webpack-dev`  
+windows:  
+`npm run server-dev-w`  
+`npm run webpack-dev-w`  
 
 ## pages
 
-http://localhost:13000/  
-http://localhost:13000/app  
-http://localhost:13000/app1  
-http://localhost:13000/app2  
+[Home](http://localhost:13000/)  
+[Home App](http://localhost:13000/app)  
+[App1](http://localhost:13000/app1)  
+[App2](http://localhost:13000/app2)
 
 ## prod mode
 
-`npm start`
+mac-os:  
+`npm start`  
+windows:  
+`npm start-w`  
 
 ## deployment
 ...
